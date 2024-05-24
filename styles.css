@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.navbar {
+    background-color: #1f1f1f;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+	margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.navbar a {
+    margin: 0 10px;
+    float: left;
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+    color: #ffffff;
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+.section-list, .subsection-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section-list li, .subsection-list li {
+    background-color: #1f1f1f;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+}
+
+.section-list li a, .subsection-list li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    display: block;
+}
+
+.section-content {
+    display: none;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.formula {
+    background-color: #2a2a2a;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+.formula p {
+    text-align: center;
+    font-size: 24px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.description {
+    width: 50%;
+    text-align: left;
+}
+
+.notation {
+    width: 50%;
+    text-align: right;
+}
+
+.notation ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer {
+    width: 100%;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 999;
+    margin-top: 20px;
+}
+
+.formula p {
+    text-align: center;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 600px) {
+    .formula p {
+        font-size: 18px;
+    }
+
+    .description,
+    .notation {
+        width: 100%;
+    }
+
+    .details {
+        flex-direction: column;
+        align-items: center;
+    }
+}

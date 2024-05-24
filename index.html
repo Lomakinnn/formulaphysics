@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Веб-конструктор формул</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Веб-конструктор формул</h1>
+    </header>
+    <div class="navbar">
+        <a href="index.html">Главная</a>
+        <a href="authors.html">Авторы</a>
+        <a href="about.html">О сайте</a>
+    </div>
+    <div class="container">
+        <h1>Разделы физики для первокурсников</h1>
+        <ul class="section-list">
+            <li>
+                <a href="javascript:void(0);" class="section-toggle" onclick="toggleSection('mechanics')"><b>Механика</b></a>
+                <div id="mechanics" class="section-content">
+                    <ul class="subsection-list">
+                        <li>
+                            <a href="javascript:void(0);" class="section-toggle" onclick="toggleSection('kinematics')">Кинематика</a>
+                            <div id="kinematics" class="section-content">
+                                    <p>Прямолинейное равномерное движение:</p>
+                                    <ul>
+										<li>s = vt</li>
+									</ul>
+                                    <p>Преобразования:</p>
+                                    <ul>
+                                        <li>v = s/t</li>
+                                        <li>t = s/v</li>
+                                    </ul>
+                                    <p>Прямолинейное равноускоренное движение:</p>
+									<ul>										
+										<li>s = v<sub>0</sub>t+at<sup>2</sup>/2</li>
+										<li>s = v+v<sub>0</sub>/2t</li>
+										<li>v = v<sub>0</sub>+at</li>
+										<li>v<sup>2</sup> = v<sub>0</sub><sup>2</sup>+2as</li>
+										<li>a = v-v<sub>0</sub>/t</li>
+									</ul>                                   
+                                    <p>Преобразования:</p>
+                                    <ul>
+										<li>t = (v-v0)/a</li>
+										<li>t = (-v<sub>0</sub>±√(v<sub>0</sub><sup>2</sup>+2as))/a</li>
+										<li>v<sup>2</sup> = v<sub>0</sub><sup>2</sup>+2as</li>
+										<li>a = (v<sup>2</sup>-v<sub>0</sub><sup>2</sup>)/2s/li>
+										<li>s = (v<sup>2</sup>-v<sub>0</sub><sup>2</sup>)/2a</li>
+										<li>v<sub>0</sub> = (v<sup>2</sup>-2as)/v</li>
+                                        <li>at = v - v<sub>0</sub></li>
+                                        <li>2as = v<sup>2</sup>-v<sub>0</sub><sup>2</sup></li>
+                                    </ul>
+									<p>Движение по окружности:</p>
+									<ul>
+										<li>a<sub>цс</sub> = v<sup>2</sup>/R</li>
+									</ul>
+									<p>Преобразования:</p>
+                                    <ul>
+										<li>v<sup>2</sup> = a<sub>цс</sub>R</li>
+										<li>R = v<sup>2</sup>/a<sub>цс</sub></li>
+									</ul>
+									<p>Условные обозначения:</p>
+                                    <ul>
+                                        <li>v — скорость (м/с)</li>
+                                        <li>s — расстояние (м)</li>
+                                        <li>t — время (с)</li>
+										<li>a — ускорение (м/с<sup>2</sup>)</li>
+										<li>R — радиус (м)</li>
+                                    </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="section-toggle" onclick="toggleSection('dynamics')">Динамика</a>
+                            <div id="dynamics" class="section-content">
+								<p>Второй закон Ньютона:</p>
+									<ul>
+										<li>F = ma</li>
+									</ul>
+								<p>Преобразования:</p>
+									<ul>
+										<li>m = F/a</li>
+										<li>a = F/m</li>
+									</ul>
+								<p>Закон всемирного тяготения:</p>
+									<ul>
+										<li>F = Gm<sub>1</sub>m<sub>2</sub>/r<sup>2</sup></li>
+									</ul>
+								<p>Кинетическая энергия:</p>
+									<ul>
+										<li>E<sub>k</sub> = mv<sup>2</sup>/2</li>
+									</ul>
+								<p>Потенциальная энергия упругой деформации:</p>
+									<ul>
+										<li>E = kx<sup>2</sup>/2</li>
+									</ul>
+								<p>Потенциальная энергия гравитационного поля:</p>
+									<ul>
+										<li>E<sub>p</sub> = mgh</li>
+									</ul>
+								<p>Преобразования:</p>
+									<ul>
+										<li>m = F/a</li>
+										<li>a = F/m</li>
+										<li>m<sub>1</sub> = Fr<sup>2</sup>/(Gm<sub>2</sub>)</li>
+										<li>m<sub>2</sub> = Fr<sup>2</sup>/(Gm<sub>1</sub>)</li>
+										<li>r = √(Gm<sub>1</sub>m<sub>2</sub>/F)</li>
+										<li>m = (2E<sub>k</sub>)/v</li>
+										<li>v = √((2E<sub>k</sub>)/v)</li>
+										<li>k = (2E)/x<sup>2</sup></li>
+										<li>x = √(2E/k)</li>
+										<li>m = E<sub>p</sub>/(gh)</li>
+										<li>h = E<sub>p</sub>/(mg)</li>
+									</ul>
+								<p>Условные обозначения:</p>
+									<ul>
+										<li>F — сила (Н)</li>
+										<li>m — масса (кг)</li>
+										<li>a — ускорение (м/с<sup>2</sup>)</li>
+										<li>G — гравитационная постоянная</li>
+										<li>m<sub>1</sub>, m<sub>2</sub> — массы взаимодействующих тел (кг)</li>
+										<li>r — расстояние между центрами масс тел (м)</li>
+										<li>v — скорость (м/c, метр в секунду)</li>
+										<li>x — удлинение пружины (м, метр)</li>
+										<li>h — высота (м, метр)</li>
+									</ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="section-toggle" onclick="toggleSection('statics')">Статика</a>
+                            <div id="statics" class="section-content">
+                                <p>Условие равновесия:</p>
+                                    <ul>
+										<li>∑F = 0</li>
+										<li>∑M = 0</li>
+									</ul>
+								<p>Условные обозначения:</p>
+									<ul>
+										<li>∑F — сумма всех сил (Н)</li>
+										<li>∑M — сумма всех моментов сил (Н)</li>
+									</ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="section-toggle" onclick="toggleSection('oscillations')">Механические колебания и волны</a>
+                            <div id="oscillations" class="section-content">
+                                <p>Гармонические колебания:</p>
+                                    <ul>
+										<li>x = Acos(ωt+φ)</li>
+									</ul>
+								<p>Гармонические колебания:</p>
+									<ul>
+										<li>ω = 2πf</li>
+									</ul>
+								<p>Период колебаний:</p>
+									<ul>
+										<li>T = 1/f</li>
+									</ul>
+								<p>Преобразования:</p>
+									<ul>
+										<li>A = x/cos(ωt+φ)</li>
+										<li>ω = (acos(x/A)-φ)/t</li>
+										<li>t = (acos(x/A)-φ)/ω</li>
+										<li>f = ω/2π</li>
+									</ul>
+								<p>Условные обозначения:</p>
+									<ul>
+										<li>x — смещение (м)</li>
+										<li>A — амплитуда (м)</li>
+										<li>ω — циклическая частота (рад/с)</li>
+										<li>t — время (с)</li>
+										<li>φ — начальная фаза (рад)</li>
+										<li>f — частота (Гц)</li>
+										<li>T — период колебаний (с)</li>
+									</ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="section-toggle" onclick="toggleSection('molecular-thermodynamics')"><b>Молекулярная физика и термодинамика</b></a>
+                <div id="molecular-thermodynamics" class="section-content">
+                    <ul class="subsection-list">
+                        <li>
+                            <a href="javascript:void(0);" class="section-toggle" onclick="toggleSection('molecular-kinetic')">Основы молекулярно-кинетической теории</a>
+                            <div id="molecular-kinetic" class="section-content">
+                                <p><b>Основное уравнение МКТ:</b></p>
+                                    <ul>
+										<li>p =(1/3)m<sub>0</sub>nv<sup>2</sup></li>
+									</ul>
+								<p>Условные обозначения:</p>
+									<ul>
+										<li>m<sub>0</sub> — масса одной молекулы (г/моль)</li>
+										<li>n — концентрация молекул (м<sup>-3</sup>)</li>
+										<li>v<sup>2</sup> — среднее квадратичное значение скорости молекул(м<sup>2</sup>/с<sup>2</sup>)</li>
+									</ul>
+                            </div>
+                        </li>
+                    </ul>
+					<ul class="subsection-list">
+                        <li>
+                            <a href="javascript:void(0);" class="section-toggle" onclick="toggleSection('thermalphenomena')">Тепловые явления</a>
+                            <div id="thermalphenomena" class="section-content">
+                                <p><b>Уравнение состояния идеального газа:</b></p>
+									<ul>
+										<li>pV=nRT</li>										
+									</ul>
+								<p><b>Закон Бойля-Мариотта (для изотермического процесса):</b></p>
+									<ul>
+										<li>pV=const</li>
+									</ul>
+								<p><b>Закон Гей-Люссака (для изобарического процесса):</b></p>
+									<ul>
+										<li>V/T=const</li>
+									</ul>
+								<p><b>Закон Шарля (для изохорного процесса):</b></p>
+									<ul>
+										<li>P/T=const</li>
+									</ul>
+								<p>Преобразования:</p>
+									<ul>
+										<li>p = nRT/V</li>
+										<li>V = nRT/p</li>
+										<li>n = pV/(RT)</li>
+										<li>R = pV/(nT)</li>
+										<li>T = pV/(nR)</li>
+										<li>V<sub>1</sub> = (p<sub>2</sub>V<sub>2</sub>)/p<sub>1</sub></li>
+										<li>V<sub>1</sub> = (T<sub>1</sub>V<sub>2</sub>)/T<sub>2</sub></li>
+										<li>p<sub>1</sub> = (T<sub>1</sub>p<sub>2</sub>)/T<sub>2</sub></li>
+									</ul>
+								<p>Условные обозначения:</p>
+									<ul>
+										<li>p — давление (Па)</li>
+										<li>V — объем (м<sup>3</sup>)</li>
+										<li>n — количество вещества (моль)</li>
+										<li>R — универсальная газовая постоянная</li>
+										<li>T — температура (К)</li>
+									</ul>
+                            </div>
+                        </li>
+                    </ul>
+					<ul class="subsection-list">
+                        <li>
+                            <a href="javascript:void(0);" class="section-toggle" onclick="toggleSection('firstlawthermodynamics')">Первый закон термодинамики</a>
+                            <div id="firstlawthermodynamics" class="section-content">
+                                <p><b>Первый закон термодинамики:</b></p>
+									<ul>
+										<li>ΔU = Q - A</li>
+									</ul>
+								<p>Преобразования:</p>
+									<ul>
+										<li>Q = ΔU+A</li>
+										<li>A = Q-ΔU</li>
+									</ul>
+								<p>Условные обозначения:</p>
+									<ul>
+										<li>ΔU — изменение внутренней энергии (Дж)</li>
+										<li>Q — количество теплоты (Дж)</li>
+										<li>A — работа (Дж)</li>
+									</ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="section-toggle" onclick="toggleSection('electrodynamics')"><b>Электродинамика</b></a>
+                <div id="electrodynamics" class="section-content"> 
+                    <ul class="subsection-list">
+					<li>
+                            <a href="javascript:void(0);" class="section-toggle" onclick="toggleSection('electrostatics')">Электростатика</a>
+                            <div id="electrostatics" class="section-content">
+					
+                                <p>Закон Кулона:</p>
+									<ul>
+										<li>F = k<sub>e</sub>q<sub>1</sub>q<sub>2</sub>/r<sup>2</sup></li>
+									</ul>
+								<p>Электрическое поле:</p>
+									<ul>
+										<li>E = F/q</li>
+									</ul>
+								<p>Потенциал электрического поля:</p>
+									<ul>
+										<li>φ = W/q</li>
+									</ul>
+								<p>Потенциальная энергия электрического поля:</p>
+									<ul>
+										<li>E<sub>p</sub> = qU</li>
+									<p>Преобразования:</p>
+									<ul>
+										<li>q<sub>1</sub> = (Fr<sup>2</sup>)/(k<sub>e</sub>q<sub>2</sub></li>
+										<li>q<sub>2</sub> = (Fr<sup>2</sup>)/(k<sub>e</sub>q<sub>1</sub></li>
+										<li>r = √((k<sub>e</sub>q<sub>1</sub>q<sub>2</sub>)/F)</li>
+										<li>F = Eq</li>
+										<li>q = F/E</li>
+										<li>W = φq</li>
+										<li>q = W/φ</li>
+										<li>q = E<sub>p</sub>/U</li>
+										<li>U = E<sub>p</sub>/q</li>
+									</ul>
+									<p>Условные обозначения:</p>
+									<ul>
+										<li>k<sub>e</sub> - коэффициент пропорциональности (кулоновская постоянная)</li>
+										<li>q<sub>1</sub>, q<sub>2</sub> - заряды (Кл)</li>
+										<li>r — расстояние между зарядами (м)</li>
+										<li>E — напряженность электрического поля (В/м)</li>
+										<li>F — сила (Н)</li>
+										<li>q — заряд (Кл)</li>
+										<li>φ — потенциал (В)</li>
+										<li>W — работа (Дж)</li>
+										<li>U - напряжение (В, Вольт)</li>
+									</ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="section-toggle" onclick="toggleSection('direct-electric-current')">Постоянный электрический ток</a>
+                            <div id="direct-electric-current" class="section-content">
+                                <p>Закон Ома для участка цепи:</p>
+									<ul>
+										<li>I = U/R</li>
+									</ul>
+								<p>Работа и мощность электрического тока:</p>
+									<ul>
+										<li>A=UIt</li>
+										<li>P=UI</li>
+									</ul>
+								<p>Преобразования:</p>
+									<ul>
+										<li>U = IR</li>
+										<li>R = U/I</li>
+										<li>U = A/(It)</li>
+										<li>I = A/(Ut)</li>
+										<li>t = A/(UI)</li>
+										<li>U = P/I</li>
+										<li>I = P/U</li>										
+									</ul>
+								<p>Условные обозначения:</p>
+									<ul>
+										<li>I — сила тока (А)</li>
+										<li>U — напряжение (В)</li>
+										<li>R — сопротивление (Ом)</li>
+										<li>A — работа (Дж)</li>
+										<li>P — мощность (Вт)</li>
+										<li>t — время (с)</li>
+									</ul>
+							</div>
+						</li>
+						<li>
+                            <a href="javascript:void(0);" class="section-toggle" onclick="toggleSection('magnetic-field')">Магнитное поле</a>
+                            <div id="magnetic-field" class="section-content">
+							    <p>Сила Лоренца:</p>
+									<ul>
+										<li>F=qvBsinα</li>
+									</ul>
+								<p>Закон Ампера:</p>
+									<ul>
+										<li>F=BIlsinα</li>
+									</ul>
+								<p>Закон Фарадея (электромагнитная индукция):</p>
+									<ul>
+										<li>E = -ΔΦ/Δt</li>
+									</ul>
+									<p>Преобразования:</p>
+									<ul>
+										<li>q = F/(vBsinα)</li>
+										<li>v = F/(qBsinα)</li>
+										<li>B = F/(qvsinα)</li>
+										<li>sinα = F/(qvB)</li>
+										<li>B = F/(Ilsinα)</li>
+										<li>I = F/(Blsinα)</li>
+										<li>l = F/(BIsinα)</li>	
+										<li>sinα = F/(BIl)</li>
+										<li>ΔΦ = −EΔt</li>
+										<li>Δt = −ΔΦ/E</li>
+									</ul>
+								<p>Условные обозначения:</p>
+									<ul>
+										<li>F — сила Лоренца</li>
+										<li>q — заряд (Кл)</li>
+										<li>v — скорость заряда (А)</li>
+										<li>B — магнитная индукция (Тл)</li>
+										<li>α — угол между направлением движения заряда и магнитным полем </li>
+										<li>I — сила тока (А)</li>
+										<li>l — длина проводника (м)</li>
+										<li>E — ЭДС индукции (тл)</li>
+										<li>Φ — магнитный поток (Вб)</li>
+									</ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>			
+            <li>
+                <a href="javascript:void(0);" class="section-toggle" onclick="toggleSection('optics')"><b>Оптика</b></a>
+                <div id="optics" class="section-content">
+                    <ul class="subsection-list">
+                        <li>
+                            <a href="javascript:void(0);" class="section-toggle" onclick="toggleSection('geometric-optics')">Геометрическая оптика</a>
+                            <div id="geometric-optics" class="section-content">
+                                <p><b>Закон отражения света:</b></p>
+									<ul>
+										<li>θi=θr</li>
+									</ul>
+								<p><b>Закон отражения света (закон Снеллиуса):</b></p>
+									<ul>
+										<li>n<sub>1</sub>sin(θ<sub>1</sub>) = n<sub>2</sub>sin(θ<sub>2</sub>)</li>
+									</ul>
+								<p>Преобразования:</p>
+									<ul>
+										<li>n<sub>1</sub> = (n<sub>2</sub>sin(θ<sub>2</sub>))/sin(θ<sub>1</sub>)</li>
+										<li>n<sub>2</sub> = (n<sub>1</sub>sin(θ<sub>1</sub>))/sin(θ<sub>2</sub>)</li>
+										<li>θ<sub>1</sub> = sin<sup>-1</sup>((n<sub>2</sub>sin(θ<sub>2</sub>))/n<sub>1</sub>)</li>
+										<li>θ<sub>2</sub> = sin<sup>-1</sup>(((n<sub>1</sub>sin(θ<sub>1</sub>))/n<sub>2</sub>)</li>
+									</ul>
+								<p>Условные обозначения:</p>
+									<ul> <!--golub was here-->
+										<li>θi — угол падения</li>
+										<li>θr — угол отражения</li>
+										<li>n<sub>1</sub>,n<sub>2</sub> — показатели преломления сред</li>
+										<li>θ<sub>1</sub>,θ<sub>2</sub> — углы падения и преломления</li>
+									</ul><!--lomakinnn was here-->
+                            </div>
+                        </li>
+					</ul>
+					<ul class="subsection-list">
+						<li>
+                            <a href="javascript:void(0);" class="section-toggle" onclick="toggleSection('wave-optics')">Волновая оптика</a>
+                            <div id="wave-optics" class="section-content">
+                                <p><b>Условие интерференции:</b></p>
+									<ul>
+										<li>dsinθ = mλ</li>
+									</ul>
+								<p><b>Условие дифракции:</b></p>
+									<ul>
+										<li>asinθ = mλ</li>
+									</ul>
+								<p>Преобразования:</p>
+									<ul>
+										<li>d = (mλ)/sin(θ)</li>
+										<li>θ = sin<sup>-1</sup>((mλ)/d)</li>
+										<li>λ = (dsin(θ))/m</li>
+										<li>a = (mλ)/sin(θ)</li>
+										<li>θ = sin<sup>-1</sup>((mλ)/a)</li>
+										<li>λ = (asin(θ))/m</li>
+									</ul>
+								<p>Условные обозначения:</p>
+									<ul>
+										<li>d — расстояние между щелями (м)</li>
+										<li>θ — угол</li>
+										<li>m — порядок максимума</li>
+										<li>λ — длина волны (м)</li>
+										<li>a — ширина щели (м)</li>
+									</ul>
+                            </div>
+                        </li>
+						
+                    </ul>
+                </div>
+            </li>
+			<li>
+                <a href="javascript:void(0);" class="section-toggle" onclick="toggleSection('quantum-physics')"><b>Квантовая физика и атомная физика</b></a>
+                <div id="quantum-physics" class="section-content">
+                    <ul class="subsection-list">
+                        <li>
+                            <a href="javascript:void(0);" class="section-toggle" onclick="toggleSection('photoeffect')">Фотоэффект</a>
+                            <div id="photoeffect" class="section-content">
+                                <p>Уравнение Эйнштейна для фотоэффекта:</p>
+									<ul>
+										<li>hν = A<sub>вых</sub> + E<sub>кин</sub></li>
+									</ul>
+								<p>Условные обозначения:</p>
+									<ul>
+										<li>h — постоянная Планка</li>
+										<li>ν — частота света (Гц)</li>
+										<li>A<sub>вых</sub> — работа выхода (Дж)</li>
+										<li>E<sub>кин</sub> — кинетическая энергия выбитого электрона (Дж)</li>
+									</ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="section-toggle" onclick="toggleSection('atomic-structure')">Строение атома</a>
+                            <div id="atomic-structure" class="section-content">
+                                <p>Радиус Бора:</p>
+									<ul>
+										<li>r<sub>n</sub> = n<sup>2</sup>ℏ<sub>2</sub>/ke<sup>2</sup>m<sub>e</sub></li>
+									</ul>
+								<p>Условные обозначения:</p>
+									<ul>
+										<li>n — главный квантовый номер</li>
+										<li>ℏ — приведенная постоянная Планка</li>
+										<li>k — коэффициент пропорциональности</li>
+										<li>e — заряд электрона (Кл)</li>
+										<li>m<sub>e</sub> — масса электрона (а.е.м.)</li>
+									</ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+			<li>
+                <a href="javascript:void(0);" class="section-toggle" onclick="toggleSection('nuclear')"><b>Ядерная физика</b></a>
+                <div id="nuclear" class="section-content">
+                    <ul class="subsection-list">
+                        <li>
+                            <a href="javascript:void(0);" class="section-toggle" onclick="toggleSection('energycore')">Энергия связи ядра</a>
+                            <div id="energycore" class="section-content">
+                                <p><b>Энергия связи:</b></p>
+									<ul>
+										<li>E=Δmc<sup>2</sup></li>
+									</ul>
+								<p>Преобразования:</p>
+									<ul>
+										<li>Δm = E/c<sup>2</sup></li>
+										<li>c = √(E/Δm)</li>
+									</ul>
+								<p>Условные обозначения:</p>
+									<ul>
+										<li>E — энергия связи (МэВ)</li>
+										<li>Δm — дефект массы (МэВ/с<sup>2</sup>)</li>
+										<li>c — скорость света</li>
+									</ul>
+					</ul>				
+					<ul class="subsection-list">
+                        <li>
+                            <a href="javascript:void(0);" class="section-toggle" onclick="toggleSection('radioactivedecay')">Радиоактивный распад</a>
+                            <div id="radioactivedecay" class="section-content">				
+								<p><b>Закон радиоактивного распада:</b></p>
+									<ul>
+										<li>N(t) = N<sub>0</sub>e<sub>-λt</sub></li>
+									</ul>
+								<p>Преобразования:</p>
+									<ul>
+										<li>N<sub>0</sub> = N(t)/e<sub>-λt</sub></li>
+										<li>N<sub>0</sub> = N(t)e<sub>λt</sub></li>
+										<li>N(t) = N<sub>0</sub>e<sub>-λt</sub></li>
+										<li>λ = -ln(N(t)/N<sub>0</sub>)/t</li>
+										<li>t = -ln(N(t)/N<sub>0</sub>)/λ</li>
+									</ul>
+								<p>Условные обозначения:</p>
+									<ul>
+										<li>N(t) — количество ядер в момент времени t</li>
+										<li>N<sub>0</sub> — начальное количество ядер</li>
+										<li>λ — постоянная распада (Бк)</li>
+										<li>ln — натуральный логарифм</li>
+									</ul>
+                            </div>
+                        </li>
+					</ul>
+					<ul class="subsection-list">
+                        <li>
+                            <a href="javascript:void(0);" class="section-toggle" onclick="toggleSection('decayperiod')">Период полураспада</a>
+                            <div id="decayperiod" class="section-content">
+								<p><b>Период полураспада:</b></p>
+									<ul>
+										<li>T<sub>1/2</sub> = ln(2)/λ</li>
+									</ul>
+								<p>Преобразования:</p>
+									<ul>
+										<li>λ = ln(2)/T<sub>1</sub>/2</li>
+										<li>λ = -ln(N(t)/N<sub>0</sub>)/t</li>
+										<li>t = -ln(N(t)/N<sub>0</sub>)/λ</li>
+									</ul>
+								<p>Условные обозначения:</p>
+									<ul>
+										<li>N(t) — количество ядер в момент времени t</li>
+										<li>N<sub>0</sub> — начальное количество ядер</li>
+										<li>λ — постоянная распада (Бк)</li>
+										<li>ln — натуральный логарифм</li>
+									</ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+     </div>
+    <footer>
+        <p>Lomakinnn. GPL-3.0 License.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
